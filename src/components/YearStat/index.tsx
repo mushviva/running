@@ -111,9 +111,9 @@ const YearStat = ({
           <Stat value={avgHeartRate} description=" Avg Heart Rate" />
         )}
       </section>
-      {year !== 'Total' && hovered && (
+      {year !== 'Total' && (
         <Suspense fallback="loading...">
-          <YearSVG className="year-svg my-4 h-4/6 w-4/6 border-0 p-0" />
+          <YearSVG className="year-svg my-4 h-4/6 w-[100%] border-0 p-0" />
         </Suspense>
       )}
       <hr />
